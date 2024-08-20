@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks Condition="'$(LibraryFrameworks)'==''">net45;net40;netstandard2.0;netcoreapp2.0;netcoreapp3.0</TargetFrameworks>
-    <TargetFrameworks Condition="'$(LibraryFrameworks)'!=''">$(LibraryFrameworks)</TargetFrameworks>
     <RootNamespace>EngineIOSharp</RootNamespace>
     <AssemblyName>EngineIOSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -25,6 +23,7 @@
     <PackageOutputPath>../nuget</PackageOutputPath>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
+    <TargetFrameworks>.NET8.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\icon.png" Pack="true" PackagePath="\" />

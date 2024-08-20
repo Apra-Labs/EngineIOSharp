@@ -42,6 +42,7 @@ namespace EngineIOSharp.Server
             {
                 Server.SslConfiguration.ServerCertificate = Option.ServerCertificate;
                 Server.SslConfiguration.ClientCertificateValidationCallback = Option.ClientCertificateValidationCallback;
+                Server.SslConfiguration.EnabledSslProtocols = System.Security.Authentication.SslProtocols.Tls12;
             }
         }
 
